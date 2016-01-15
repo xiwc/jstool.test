@@ -1,0 +1,1583 @@
+
+        'v1.team.teamBean': {
+            real: '/v1/team/teamBean',
+            mock: '/mock/yangyang/v1/team/teamBean.json',
+            ismock: true,
+            method: 'get'
+        },
+        'v1.inTeam.getTeamName': {
+            real: '/v1/InTeam/getTeamName',
+            mock: '/mock/yangyang/v1/InTeam/getTeamName.json',
+            ismock: true,
+            method: 'get'
+        },
+        'img.cutImage': {
+            real: '/img/cutImage',
+            mock: '/mock/yangyang/img/cutImage.json',
+            ismock: false,
+            method: 'post'
+        },
+        'uploadedImg': {
+            real: '/uploadedImg',
+            mock: '/mock/yangyang/uploadedImg.json',
+            ismock: true,
+            method: 'post'
+        },
+
+        //------------------------ chenchaoyang start --------------------
+        // 'resource.selectUser': {
+        //     real: '/resource/selectUser',
+        //     mock: '/mock/yangyang/resource/selectUser.json',
+        //     ismock: true,
+        //     method: 'get'
+        // },
+        //查询人员接口(任务接口)
+        'task.taskMember': {
+            real: '/v2/task/taskMember',
+            mock: '/mock/yangyang/v2/task/taskMember.json',
+            ismock: false,
+            method: 'get'
+        },
+        //保存参与者接口(任务接口)
+        'task.taskJoinMember': {
+            real: '/v2/task/taskJoinMember',
+            mock: '/mock/yangyang/v2/task/taskJoinMember.json',
+            ismock: false,
+            method: 'post'
+        },
+        //粘贴图片上传
+        'task.mobile.imageUrl': {
+            real: '/v2/task/mobile/imageUrl',
+            mock: '/mock/yangyang/v2/task/mobile/imageUrl.json',
+            ismock: false,
+            method: 'post'
+        },
+        //根据任务编号查询，任务列表
+        'task.taskCode': {
+            real: '/v2/task/taskCode',
+            mock: '/mock/yangyang/v2/task/taskCode-search.json',
+            ismock: false,
+            method: 'get'
+        },
+        // 个人信息设置页面，手机获得验证码
+        'user.mobileCheckNum': {
+            real: '/v2/user/mobileCheckNum',
+            mock: '',
+            ismock: false,
+            method: 'get'
+        },
+        // 个人信息设置页面，添加手机
+        'user.mobile.post': {
+            real: '/v2/user/mobile',
+            mock: '',
+            ismock: false,
+            method: 'post'
+        },
+        // 个人信息设置页面，设置默认手机
+        'user.mobile.put': {
+            real: '/v2/user/mobile',
+            mock: '',
+            ismock: false,
+            method: 'put'
+        },
+        // 个人信息设置页面，删除手机
+        'user.mobile.delete': {
+            real: '/v2/user/mobile',
+            mock: '',
+            ismock: false,
+            method: 'delete'
+        },
+
+        // 个人信息设置页面，添加邮箱
+        'user.email.post': {
+            real: '/v2/user/email',
+            mock: '',
+            ismock: false,
+            method: 'post'
+        },
+        // 个人信息设置页面，设置默认邮箱
+        'user.email.put': {
+            real: '/v2/user/email',
+            mock: '',
+            ismock: false,
+            method: 'put'
+        },
+        // 个人信息设置页面，删除邮箱
+        'user.email.delete': {
+            real: '/v2/user/email',
+            mock: '',
+            ismock: false,
+            method: 'delete'
+        },
+        // 创建sprint实例
+        'project.sprint.post': {
+            real: '/v2/project/{projectId}/sprint',
+            mock: '/mock/yangyang/v2/project/sprint-post.json',
+            ismock: false,
+            method: 'post',
+            desc: '创建sprint实例',
+            payload: {
+                projectId: 'ff8081814ea9846c014eaae0e09d1423'
+            }
+        },
+        // 更新sprint实例
+        'project.sprint.put': {
+            real: '/v2/project/{projectId}/sprint',
+            mock: '/mock/yangyang/v2/project/sprint-put.json',
+            ismock: false,
+            method: 'put',
+            desc: '更新sprint实例',
+            payload: {
+                projectId: 'ff8081814ea9846c014eaae0e09d1423'
+            }
+        },
+        // 删除sprint实例
+        'project.sprint.delete': {
+            real: '/v2/project/{projectId}/sprint',
+            mock: '/mock/yangyang/v2/project/sprint-delete.json',
+            ismock: false,
+            method: 'delete',
+            desc: '删除sprint实例',
+            payload: {
+                projectId: 'ff8081814ea9846c014eaae0e09d1423'
+            }
+        },
+        // 查询燃尽图
+        'project.brundownchart.get': {
+            real: '/v2/project/{projectId}/sprintTask',
+            mock: '/mock/yangyang/v2/project/brundownchart-get.json',
+            ismock: false,
+            method: 'get',
+            desc: '获得项目燃尽图',
+            payload: {
+                projectId: 'ff8081814ea9846c014eaae0e09d1423'
+            }
+        },
+        //------------------------ chenchaoyang end --------------------
+
+        //------------------------ gaosong start --------------------
+        //子任务读取(任务接口)
+        'task.taskTagDetail.tag2': {
+            real: '/v2/task/taskTagDetail/{taskId}',
+            mock: '/mock/yangyang/v2/task/taskTagDetailTag2.json',
+            ismock: false,
+            method: 'get'
+        },
+        //创建项目任务(任务接口)
+        'task.task': {
+            real: '/v2/task/task',
+            mock: '/mock/yangyang/v2/task/task.json',
+            ismock: false,
+            method: 'post'
+        },
+        //创建我的任务(任务接口)
+        'task.myTask': {
+            real: '/v2/task/myTask',
+            mock: '/mock/yangyang/v2/task/myTask.json',
+            ismock: false,
+            method: 'post'
+        },
+        //创建子任务(任务接口)
+        'task.subTask': {
+            real: '/v2/task/subTask',
+            mock: '/mock/yangyang/v2/task/subTask.json',
+            method: 'post'
+        },
+        'project.projectPage.get': {
+            real: '/v2/project/projectPage',
+            mock: '/mock/yangyang/v2/project/projectPage-get.json',
+            ismock: true,
+            method: 'get'
+        },
+        //获得个人日程列表接口
+        'schedule.mySchedule.schedule.get': {
+            real: '/v2/schedule/mySchedule/schedule',
+            mock: '/mock/yangyang/v2/calendar/queryMyCalendar-get.json',
+            ismock: false,
+            method: 'get'
+        },
+        //创建个人日程接口
+        'schedule.mySchedule.schedule.post': {
+            real: '/v2/schedule/mySchedule/schedule',
+            mock: '/mock/yangyang/v2/calendar/calrndarCreate-post.json',
+            ismock: false,
+            method: 'post'
+        },
+        //创建项目日程接口
+        'schedule.project.schedule.post': {
+            real: '/v2/schedule/project/{projectId}/schedule',
+            mock: '/mock/yangyang/v2/calendar/calrndarCreate-post.json',
+            ismock: false,
+            method: 'post'
+        },
+        //获得项目日程列表接口
+        'schedule.project.schedule.get': {
+            real: '/v2/schedule/project/{projectId}/schedule',
+            mock: '/mock/yangyang/v2/calendar/queryMyCalendar-get.json',
+            ismock: false,
+            method: 'get'
+        },
+        //获得日程页面初始化资源接口
+        'schedule.initResource.get': {
+            real: '/v2/schedule/initResource',
+            mock: '/mock/yangyang/v2/calendar/initResource-get.json',
+            ismock: false,
+            method: 'get'
+        },
+        //删除个人日程接口
+        'schedule.mySchedule.scheduleId.delete': {
+            real: '/v2/schedule/mySchedule/schedule/{scheduleId}',
+            mock: '/mock/yangyang/v2/calendar/initResource-delete.json',
+            ismock: false,
+            method: 'delete'
+        },
+        //修改个人日程接口
+        'schedule.mySchedule.scheduleId.put': {
+            real: '/v2/schedule/mySchedule/schedule/{scheduleId}',
+            mock: '/mock/yangyang/v2/calendar/initResource-put.json',
+            ismock: false,
+            method: 'put'
+        },
+        //获得个人日程详细信息
+        'schedule.mySchedule.scheduleId.get': {
+            real: '/v2/schedule/mySchedule/schedule/{scheduleId}',
+            mock: '/mock/yangyang/v2/calendar/calendarEdit-get.json',
+            ismock: false,
+            method: 'get'
+        },
+        //获得项目日程详细信息
+        'schedule.projectId.scheduleId.get': {
+            real: '/v2/schedule/project/schedule/{scheduleId}',
+            mock: '/mock/yangyang/v2/calendar/calendarEdit-get.json',
+            ismock: false,
+            method: 'get'
+        },
+        //修改项目日程接口
+        'schedule.projectId.scheduleId.put': {
+            real: '/v2/schedule/project/schedule/{scheduleId}',
+            mock: '/mock/yangyang/v2/calendar/initResource-put.json',
+            ismock: false,
+            method: 'put'
+        },
+        //删除项目日程接口
+        'schedule.projectId.scheduleId.delete': {
+            real: '/v2/schedule/project/schedule/{scheduleId}',
+            mock: '/mock/yangyang/v2/calendar/initResource-delete.json',
+            ismock: false,
+            method: 'delete'
+        },
+        //添加日程附件接口
+        'schedule.scheduleId.file.post': {
+            real: '/v2/schedule/{scheduleId}/file',
+            mock: '/mock/yangyang/v2/calendar/initResource-post.json',
+            ismock: false,
+            method: 'post'
+        },
+        //删除日程文件接口
+        'schedule.scheduleId.file.delete': {
+            real: '/v2/schedule/{scheduleId}/file',
+            mock: '/mock/yangyang/v2/calendar/initResource-delete.json',
+            ismock: false,
+            method: 'delete'
+        },
+        //获得日程文件接口
+        'schedule.scheduleId.file.get': {
+            real: '/v2/schedule/{scheduleId}/file',
+            mock: '/mock/yangyang/v2/calendar/initResource-get.json',
+            ismock: false,
+            method: 'get'
+        },
+        //获得日程列表接口
+        'schedules.get': {
+            real: '/v2/schedule/schedule-list',
+            mock: '/mock/yangyang/v2/calendar/queryMyCalendarList-get.json',
+            ismock: false,
+            method: 'get'
+        },
+        //------------------------ gaosong end --------------------
+
+        //------------------------ liumin start --------------------
+        'message.allMessages.get': {
+            real: '/v2/message/allMessages',
+            mock: '/mock/yangyang/v2/message/allMessages-get.json',
+            ismock: false,
+            method: 'get'
+        },
+        'message.allMessages.delete': {
+            real: '/v2/message/allMessages',
+            mock: '/mock/yangyang/v2/message/allMessages-get.json',
+            ismock: false,
+            method: 'delete'
+        },
+        'message.messagesCount': {
+            real: '/v2/message/messagesCount',
+            mock: '/mock/yangyang/v2/message/messagesCount.json',
+            ismock: false,
+            method: 'get'
+        },
+        'message.unReadMessage': {
+            real: '/v2/message/unReadMessage',
+            mock: '/mock/yangyang/v2/message/unReadMessage.json',
+            ismock: false,
+            method: 'put'
+        },
+        'message.message.permission': {
+            real: '/v2/message/message/permission',
+            mock: '/mock/yangyang/v2/messagePermission.json',
+            ismock: false,
+            method: 'get'
+        },
+
+
+
+        //------------------------ liumin end --------------------
+
+        //------------------------ raoenhui start --------------------
+        //查询项目任务列表(任务接口)
+        'task.taskCard.get': {
+            real: '/v2/task/taskCard',
+            mock: '/mock/yangyang/v2/task/taskCard-get.json',
+            ismock: false,
+            method: 'get'
+        },
+        //查询我的任务列表(任务接口)
+        'task.myTaskCard': {
+            real: '/v2/task/myTaskCard',
+            mock: '/mock/yangyang/v2/task/myTaskCard.json',
+            ismock: false,
+            method: 'get'
+        },
+        //修改任务状态(任务接口)
+        'task.taskStatus': {
+            real: ' /v2/task/taskStatus/{taskId}',
+            mock: '/mock/yangyang/v2/task/taskStatus.json',
+            ismock: false,
+            method: 'put'
+        },
+        //删除任务(任务接口)
+        'task.taskOpt.delete': {
+            real: '/v2/task/taskOpt',
+            mock: '/mock/yangyang/v2/task/taskOpt-delete.json',
+            ismock: false,
+            method: 'delete'
+        },
+        //根据执行者查询任务列表(任务接口)
+        'task.taskDetail.executor.get': {
+            real: '/v2/task/taskDetail/executor',
+            mock: '/mock/yangyang/v2/task/executor-get.json',
+            ismock: false,
+            method: 'get'
+        },
+        //任务移交接口(任务接口)
+        'task.executor.put': {
+            real: '/v2/task/executor',
+            mock: '/mock/yangyang/v2/task/executor-put.json',
+            ismock: false,
+            method: 'put'
+        },
+        //获取任务备注列表(任务接口)
+        'task.remarks.get': {
+            real: ' /v2/task/remarks',
+            mock: '/mock/yangyang/v2/task/taskRemarks-get.json',
+            ismock: false,
+            method: 'get'
+        },
+        //添加任务备注列表(任务接口)
+        'task.remarks.post': {
+            real: ' /v2/task/remarks',
+            mock: '/mock/yangyang/v2/task/taskRemarks-post.json',
+            ismock: false,
+            method: 'post'
+        },
+        //删除任务备注列表(任务接口)
+        'task.remarks.delete': {
+            real: ' /v2/task/remarks',
+            mock: '/mock/yangyang/v2/task/taskRemarks-delete.json',
+            ismock: false,
+            method: 'delete'
+        },
+        // 项目sprint列表
+        'project.sprint.get': {
+            real: '/v2/project/{projectId}/sprint',
+            mock: '/mock/yangyang/v2/project/sprint-get.json',
+            ismock: false,
+            method: 'get',
+            desc: '项目sprint列表',
+            payload: {
+                projectId: 'ff8081814ea9846c014eaae0e09d1423'
+            }
+        },
+        'gitLab.operatorBranches.get': {
+            real: '/v2/gitLab/get/operatorBranches',
+            mock: '/mock/yangyang/v2/gitLab/operatorBranchest-get.json',
+            ismock: false,
+            method: 'get',
+            desc: '读取git仓库'
+        },
+        'gitLab.gitCommiteMessage.get': {
+            real: '/v2/gitLab/get/gitCommiteMessage',
+            mock: '/mock/yangyang/v2/gitLab/gitCommiteMessage-get.json',
+            ismock: false,
+            method: 'get',
+            desc: '读取git分支详细信息'
+        },
+        'gitLab.gitbranche.post': {
+            real: '/v2/gitLab/create/gitbranche',
+            mock: '/mock/yangyang/v2/gitLab/gitbranche-post.json',
+            ismock: false,
+            method: 'post',
+            desc: '新增创建Git分支'
+        },
+        'gitLab.gitUser.post': {
+            real: '/v2/gitLab/gitUser',
+            mock: '/mock/yangyang/v2/gitLab/gitUser-post.json',
+            ismock: false,
+            method: 'post',
+            desc: '创建git用户(资源)'
+        },
+        'message.messageinfo.get': {
+            real: ' /v2/message/messageinfo/{messageId}',
+            mock: '/mock/yangyang/v2/message/messageinfo-get.json',
+            ismock: false,
+            method: 'get',
+            desc: '消息任务延期（消息）'
+        },
+        //------------------------ raoenhui end --------------------
+
+        //------------------------ shaojingjing start --------------------
+
+
+
+        //------------------------ shaojingjing end --------------------
+
+        //------------------------ shenjiafang start --------------------
+        //附件读取(任务)
+        'task.taskTagDetail.tag1': {
+            real: '/v2/task/taskTagDetail/{taskId}',
+            mock: '/mock/yangyang/v2/task/taskTagDetailTag1.json',
+            ismock: false,
+            method: 'get'
+        },
+        //任务上传附件(任务)
+        'uploadedFile': {
+            real: '/uploadedFile',
+            mock: '/mock/yangyang/uploadedFile.json',
+            ismock: false,
+            method: 'post'
+        },
+        //任务添加附件(任务)
+        'task.attachment.post': {
+            real: '/v2/task/attachment',
+            mock: '/mock/yangyang/v2/task/attachment-post.json',
+            ismock: false,
+            method: 'post'
+        },
+        //任务附件删除接口(任务)
+        'task.attachment.delete': {
+            real: '/v2/task/attachment/{taskId}',
+            mock: '/mock/yangyang/v2/task/attachment-delete.json',
+            ismock: false,
+            method: 'delete'
+        },
+        //地域列表接口(我的资源)
+        'infrastructure.getRegionList': {
+            real: '/infrastructure/getRegionList',
+            mock: '/mock/yangyang/infrastructure/getRegionList.json',
+            ismock: false,
+            method: 'post'
+        },
+        //云数据库列表(资源)
+        'infrastructure.listServiceByProject': {
+            real: '/infrastructure/listServiceByProject',
+            mock: '/mock/yangyang/infrastructure/listServiceByProject.json',
+            ismock: true,
+            method: 'post'
+        },
+        //申请云数据库(资源)
+        'infrastructure.addService': {
+            real: '/infrastructure/addService',
+            mock: '/mock/yangyang/infrastructure/addService.json',
+            ismock: true,
+            method: 'post'
+        },
+        //解绑云数据库(资源)
+        'infrastructure.unBindService': {
+            real: '/infrastructure/unBindService',
+            mock: '/mock/yangyang/infrastructure/unBindService.json',
+            ismock: true,
+            method: 'post'
+        },
+        //绑定云数据库(资源)
+        'infrastructure.bindService': {
+            real: '/infrastructure/bindService',
+            mock: '/mock/yangyang/infrastructure/bindService.json',
+            ismock: true,
+            method: 'post'
+        },
+        //删除云数据库(资源)
+        'infrastructure.deleteService': {
+            real: '/infrastructure/deleteService',
+            mock: '/mock/yangyang/infrastructure/deleteService.json',
+            ismock: true,
+            method: 'post'
+        },
+        //我的云数据首页数量(我的资源)
+        'infrastructure.queryServiceNum': {
+            real: '/infrastructure/queryServiceNum',
+            mock: '/mock/yangyang/infrastructure/queryServiceNum.json',
+            ismock: true,
+            method: 'post'
+        },
+        //我的云数据库列表、数量(我的资源)
+        'infrastructure.queryAvailableServiceByCreateUser': {
+            real: '/infrastructure/queryAvailableServiceByCreateUser',
+            mock: '/mock/yangyang/infrastructure/queryAvailableServiceByCreateUser.json',
+            ismock: true,
+            method: 'post'
+        },
+        //申请唯一性接口(我的资源)
+        'infrastructure.queryRegionProjectNum': {
+            real: '/infrastructure/queryRegionProjectNum',
+            mock: '/mock/yangyang/infrastructure/queryRegionProjectNum.json',
+            ismock: true,
+            method: 'post'
+        },
+        //申请云代码仓库(资源)
+        'gitLab.gitProject': {
+            real: '/v2/gitLab/gitProject',
+            mock: '/mock/yangyang/v2/gitLab/gitProject.json',
+            ismock: true,
+            method: 'post'
+        },
+        //未绑定云代码仓库列表(资源)
+        'gitLab.notBound': {
+            real: '/v2/gitLab/repository/project/{projectId}/notBound',
+            mock: '/mock/yangyang/v2/gitLab/notBound.json',
+            ismock: true,
+            method: 'post'
+        },
+        //绑定云代码仓库(资源)
+        'gitLab.notBounding': {
+            real: '/v2/gitLab/repository/project/{projectId}/binding',
+            mock: '/mock/yangyang/v2/gitLab/notBounding.json',
+            ismock: true,
+            method: 'post'
+        },
+        //已绑定云代码仓库列表(资源)
+        'gitLab.binding': {
+            real: '/v2/gitLab/repository/project/{projectId}/binding',
+            mock: '/mock/yangyang/v2/gitLab/binding.json',
+            ismock: true,
+            method: 'get'
+        },
+        //解绑云代码仓库(资源)
+        'gitLab.unbinding': {
+            real: '/v2/gitLab/repository/project/{projectId}/binding',
+            mock: '/mock/yangyang/v2/gitLab/unbinding.json',
+            ismock: true,
+            method: 'delete'
+        },
+        //已绑定云代码仓库列表详情(资源)
+        'gitLab.gitUser': {
+            real: '/v2/gitLab/repository/{repositoryId}/gitUser',
+            mock: '/mock/yangyang/v2/gitLab/gitUser.json',
+            ismock: true,
+            method: 'get'
+        },
+        //账户设置git(资源)
+        'gitLab.stepUser': {
+            real: '/v2/gitLab/gitUser/stepUser',
+            mock: '/mock/yangyang/v2/gitLab/stepUser.json',
+            ismock: true,
+            method: 'get'
+        },
+        //更换云代码仓库详情中的角色(资源)
+        'gitLab.changeUser': {
+            real: '/v2/gitLab/repository/{repositoryId}/user',
+            mock: '/mock/yangyang/v2/gitLab/changeUser.json',
+            ismock: true,
+            method: 'put'
+        },
+        //账户设置git项目详情(资源)
+        'gitLab.projects': {
+            real: '/v2/gitLab/git/{gitUserName}/projects',
+            mock: '/mock/yangyang/v2/gitLab/projects.json',
+            ismock: true,
+            method: 'put'
+        },
+        //我的资源git列表(我的资源)
+        'gitLab.myUser': {
+            real: 'v2/gitLab/repository/user',
+            mock: '/mock/yangyang/v2/gitLab/myUser.json',
+            ismock: true,
+            method: 'get'
+        },
+        //git详情加入仓库(资源)
+        'gitLab.memberAdd': {
+            real: '/v2/gitLab/member',
+            mock: '/mock/yangyang/v2/gitLab/memberAdd.json',
+            ismock: true,
+            method: 'get'
+        },
+        //git详情移出仓库(资源)
+        'gitLab.memberDelete': {
+            real: '/v2/gitLab/member',
+            mock: '/mock/yangyang/v2/gitLab/memberDelete.json',
+            ismock: true,
+            method: 'get'
+        },
+        //云监控列表查询(资源)
+        'infrastructure.queryAvailableDeployEnvironmentOnlyVm': {
+            real: '/infrastructure/queryAvailableDeployEnvironmentOnlyVm',
+            mock: '/mock/yangyang/infrastructure/queryAvailableDeployEnvironmentOnlyVm.json',
+            ismock: true,
+            method: 'post'
+        },
+        //云服务器列表(资源)
+        'infrastructure.queryAvailableDeployEnvironment': {
+            real: '/infrastructure/queryAvailableDeployEnvironment',
+            mock: '/mock/yangyang/infrastructure/queryAvailableDeployEnvironment.json',
+            ismock: true,
+            method: 'post'
+        },
+        //云服务器镜像(资源)
+        'infrastructure.queryImages': {
+            real: '/infrastructure/queryImages',
+            mock: '/mock/yangyang/infrastructure/queryImages.json',
+            ismock: false,
+            method: 'post'
+        },
+        //申请云服务器(资源)
+        'infrastructure.addDeployEnvironment': {
+            real: '/infrastructure/addDeployEnvironment',
+            mock: '/mock/yangyang/infrastructure/addDeployEnvironment.json',
+            ismock: false,
+            method: 'post'
+        },
+        //云服务器操作(资源)
+        'infrastructure.operDeployEnvironment': {
+            real: '/infrastructure/operDeployEnvironment',
+            mock: '/mock/yangyang/infrastructure/operDeployEnvironment.json',
+            ismock: true,
+            method: 'post'
+        },
+        //删除审核中的云服务器(资源)
+        'infrastructure.deleteWorkOrder': {
+            real: '/infrastructure/deleteWorkOrder',
+            mock: '/mock/yangyang/infrastructure/deleteWorkOrder.json',
+            ismock: false,
+            method: 'post'
+        },
+        //云服务器详情(资源)
+        'infrastructure.queryDeployEnvironmentDetail': {
+            real: '/infrastructure/queryDeployEnvironmentDetail',
+            mock: '/mock/yangyang/infrastructure/queryDeployEnvironmentDetail.json',
+            ismock: true,
+            method: 'post'
+        },
+        //云服务器磁盘查询(资源)
+        'infrastructure.queryVolumes': {
+            real: '/infrastructure/queryVolumes',
+            mock: '/mock/yangyang/infrastructure/queryVolumes.json',
+            ismock: true,
+            method: 'post'
+        },
+        //云服务器二级域名查询(资源)
+        'infrastructure.queryWlanLanMap': {
+            real: '/infrastructure/queryWlanLanMap',
+            mock: '/mock/yangyang/infrastructure/queryWlanLanMap.json',
+            ismock: true,
+            method: 'post'
+        },
+        //添加云服务器磁盘(资源)
+        'infrastructure.createVolume': {
+            real: '/infrastructure/createVolume',
+            mock: '/mock/yangyang/infrastructure/createVolume.json',
+            ismock: true,
+            method: 'post'
+        },
+        //删除云服务器磁盘(资源)
+        'infrastructure.deleteVolume': {
+            real: '/infrastructure/deleteVolume',
+            mock: '/mock/yangyang/infrastructure/deleteVolume.json',
+            ismock: true,
+            method: 'post'
+        },
+        //删除审核、审核失败的云服务器磁盘(资源)
+        'infrastructure.deleteVolumeOrder': {
+            real: '/infrastructure/deleteVolumeOrder',
+            mock: '/mock/yangyang/infrastructure/deleteVolumeOrder.json',
+            ismock: false,
+            method: 'post'
+        },
+        //删除云服务器二级域名(资源)
+        'infrastructure.deleteWlanLanMap': {
+            real: '/infrastructure/deleteWlanLanMap',
+            mock: '/mock/yangyang/infrastructure/deleteWlanLanMap.json',
+            ismock: false,
+            method: 'post'
+        },
+        //添加云服务器二级域名(资源)
+        'infrastructure.addHttpWlanLanMap': {
+            real: '/infrastructure/addHttpWlanLanMap',
+            mock: '/mock/yangyang/infrastructure/addHttpWlanLanMap.json',
+            ismock: false,
+            method: 'post'
+        },
+        //云服务器重发邮件(资源)
+        'infrastructure.sendEmail': {
+            real: '/infrastructure/sendEmail',
+            mock: '/mock/yangyang/infrastructure/sendEmail.json',
+            ismock: false,
+            method: 'post'
+        },
+        //云服务器日志(资源)
+        'infrastructure.log': {
+            real: '/v2/infrastructure/log',
+            mock: '/mock/yangyang/infrastructure/log.json',
+            ismock: false,
+            method: 'get'
+        },
+        //云服务器状态(资源)
+        'infrastructure.queryDeployEnvironmentStatus': {
+            real: '/infrastructure/queryDeployEnvironmentStatus',
+            mock: '/mock/yangyang/infrastructure/queryDeployEnvironmentStatus.json',
+            ismock: false,
+            method: 'post'
+        },
+        //我的云服务器/云监控数量(我的资源)
+        'infrastructure.queryDeployEnvironmentNum': {
+            real: '/infrastructure/queryDeployEnvironmentNum',
+            mock: '/mock/yangyang/infrastructure/queryDeployEnvironmentNum.json',
+            ismock: false,
+            method: 'post'
+        },
+        //我的云服务器列表(我的资源)
+        'infrastructure.queryAvailableDeployEnvironmentByCreateUser': {
+            real: '/infrastructure/queryAvailableDeployEnvironmentByCreateUser',
+            mock: '/mock/yangyang/infrastructure/queryAvailableDeployEnvironmentByCreateUser.json',
+            ismock: false,
+            method: 'post'
+        },
+        //我的云监控列表(我的资源)
+        'infrastructure.queryAvailableDeployEnvironmentByCreateUserOnlyVm': {
+            real: '/infrastructure/queryAvailableDeployEnvironmentByCreateUserOnlyVm',
+            mock: '/mock/yangyang/infrastructure/queryAvailableDeployEnvironmentByCreateUserOnlyVm.json',
+            ismock: false,
+            method: 'post'
+        },
+        //云监控网络(资源)
+        'monitor.queryNetMonit': {
+            real: '/monitor/queryNetMonit',
+            mock: '/mock/yangyang/monitor/queryNetMonit.json',
+            ismock: false,
+            method: 'post'
+        },
+        //云监控磁盘列表(资源)
+        'monitor.queryDiskDevName': {
+            real: '/monitor/queryDiskDevName',
+            mock: '/mock/yangyang/monitor/queryDiskDevName.json',
+            ismock: false,
+            method: 'post'
+        },
+        //云监控磁盘(资源)
+        'monitor.queryDiskMonit': {
+            real: '/monitor/queryDiskMonit',
+            mock: '/mock/yangyang/monitor/queryDiskMonit.json',
+            ismock: false,
+            method: 'post'
+        },
+        //云监控内存(资源)
+        'monitor.queryMemoryMonit': {
+            real: '/monitor/queryMemoryMonit',
+            mock: '/mock/yangyang/monitor/queryMemoryMonit.json',
+            ismock: false,
+            method: 'post'
+        },
+        //云监控是否打开(资源)
+        'infrastructure.updateMonitSwitchStatus': {
+            real: '/infrastructure/updateMonitSwitchStatus',
+            mock: '/mock/yangyang/infrastructure/updateMonitSwitchStatus.json',
+            ismock: true,
+            method: 'post'
+        },
+        //云监控阀值查询(资源)
+        'monitor.getValve': {
+            real: '/monitor/getValve',
+            mock: '/mock/yangyang/monitor/getValve.json',
+            ismock: true,
+            method: 'post'
+        },
+        //云监控阀值设置(资源)
+        'monitor.setValve': {
+            real: '/monitor/setValve',
+            mock: '/mock/yangyang/monitor/setValve.json',
+            ismock: true,
+            method: 'post'
+        },
+        //云资源首页docker数(资源)
+        'docker.imageNum': {
+            real: '/v2/docker/imageNum',
+            mock: '/mock/yangyang/v2/docker/imageNum.json',
+            ismock: true,
+            method: 'get'
+        },
+        //docker容器列表(资源)
+        'docker.imageList': {
+            real: '/v2/docker/imageList',
+            mock: '/mock/yangyang/v2/docker/imageList.json',
+            ismock: true,
+            method: 'get'
+        },
+        //某个docker容器详情(资源)
+        'docker.imageInfo': {
+            real: '/v2/docker/imageInfo/{imageId}',
+            mock: '/mock/yangyang/v2/docker/imageInfo.json',
+            ismock: true,
+            method: 'get'
+        },
+        //某个docker容器详情(资源)
+        'docker.imageInfo2': {
+            real: '/v2/docker/imageInfo/{imageId}',
+            mock: '/mock/yangyang/v2/docker/imageInfo2.json',
+            ismock: true,
+            method: 'put'
+        },
+        //某个docker容器tag列表(资源)
+        'docker.image': {
+            real: '/v2/docker/image/{imageId}',
+            mock: '/mock/yangyang/v2/docker/image.json',
+            ismock: true,
+            method: 'get'
+        },
+        //某个docker容器image列表(资源)
+        'docker.tagList': {
+            real: '/v2/docker/tag/{tagId}',
+            mock: '/mock/yangyang/v2/docker/tagList.json',
+            ismock: true,
+            method: 'get'
+        },
+        //某个docker容器tag和层合并列表(资源)
+        'docker.tagCList': {
+            real: '/v2/docker/imageInfo/{imageId}/tag',
+            mock: '/mock/yangyang/v2/docker/tagCList.json',
+            ismock: true,
+            method: 'get'
+        },
+        //------------------------ shenjiafang end --------------------
+
+        //------------------------ shenqingling start --------------------
+        'chat.chatPanel.friend': {
+            real: '/v2/chat/chatPanel/contacts',
+            mock: '/mock/yangyang/v2/chat/chatPanel/friend.json',
+            ismock: true,
+            method: 'get',
+            desc: '好友面板数据'
+        },
+        'chat.chatPanel.project': {
+            real: '/v2/chat/chatPanel/project',
+            mock: '/mock/yangyang/v2/chat/chatPanel/project.json',
+            ismock: true,
+            method: 'get',
+            desc: '项目面板数据'
+        },
+        'chat.chatPanel.groupChat': {
+            real: '/v2/chat/chatPanel/groupChat',
+            mock: '/mock/yangyang/v2/chat/chatPanel/groupChat.json',
+            ismock: true,
+            method: 'get',
+            desc: '小组面板数据'
+        },
+        'chat.singleChat.message.get': {
+            real: '/v2/chat/singleChat/message',
+            mock: '/mock/yangyang/v2/chat/singleChat/message-get.json',
+            ismock: true,
+            method: 'get',
+            desc: '单聊面板数据'
+        },
+        'chat.singleChat.message.post': {
+            real: '/v2/chat/singleChat/message',
+            mock: '/mock/yangyang/v2/chat/singleChat/message-post.json',
+            ismock: true,
+            method: 'post',
+            desc: '发送消息-单聊'
+        },
+        'uploadFileServer': {
+            real: '/uploadFileServer',
+            mock: '/mock/yangyang/uploadFileServer.json',
+            ismock: true,
+            method: 'post',
+            desc: '上传文件、图片'
+        },
+        'user.friend.post': {
+            real: '/v2/user/friend',
+            mock: '/mock/yangyang/v2/user/friend-post.json',
+            ismock: true,
+            method: 'post',
+            desc: '增加好友'
+        },
+        'user.friend.delete': {
+            real: '/v2/user/friend',
+            mock: '/mock/yangyang/v2/user/friend-delete.json',
+            ismock: true,
+            method: 'delete',
+            desc: '删除好友'
+        },
+        'chat.group-chat.message.get': {
+            real: '/v2/chat/group-chat/message',
+            mock: '/mock/yangyang/v2/chat/group-chat/message-get.json',
+            ismock: true,
+            method: 'get',
+            desc: '小组聊天面板数据'
+        },
+        'chat.group-chat.message.post': {
+            real: '/v2/chat/group-chat/message',
+            mock: '/mock/yangyang/v2/chat/group-chat/message-post.json',
+            ismock: true,
+            method: 'post',
+            desc: '发送消息-小组'
+        },
+        'chat.group-chat.member.get': {
+            real: '/v2/chat/group-chat/member',
+            mock: '/mock/yangyang/v2/chat/group-chat/member-get.json',
+            ismock: true,
+            method: 'get',
+            desc: '获得小组成员'
+        },
+        'project.projectList': {
+            real: '/v2/project/projectList',
+            mock: '/mock/yangyang/v2/project/projectList.json',
+            ismock: true,
+            method: 'get',
+            desc: '获得项目列表'
+        },
+        'user.userBean': {
+            real: '/v2/user/userBean',
+            mock: '/mock/yangyang/v2/user/userBean.json',
+            ismock: true,
+            method: 'get',
+            desc: '获得成员信息'
+        },
+        'chat.singleChat.message.put': {
+            real: '/v2/chat/singleChat/message',
+            mock: '/mock/yangyang/v2/chat/singleChat/message-put.json',
+            ismock: true,
+            method: 'put',
+            desc: '单聊消息设置已读'
+        },
+        'chat.group-chat.readed': {
+            real: '/v2/chat/group-chat/readed',
+            mock: '/mock/yangyang/v2/chat/group-chat/readed.json',
+            ismock: true,
+            method: 'put',
+            desc: '群聊消息设置已读'
+        },
+        'chat.group-chat.group-chat.get': {
+            real: '/v2/chat/group-chat',
+            mock: '/mock/yangyang/v2/chat/group-chat/group-chat-get.json',
+            ismock: true,
+            method: 'get',
+            desc: '查询沟通小组，用于设置沟通小组'
+        },
+        'chat.group-chat.group-chat.put': {
+            real: '/v2/chat/group-chat/infoAndMember',
+            mock: '/mock/yangyang/v2/chat/group-chat/group-chat-put.json',
+            ismock: true,
+            method: 'put',
+            desc: '修改沟通小组'
+        },
+        'chat.group-chat.post': {
+            real: '/v2/chat/group-chat',
+            mock: '/mock/yangyang/v2/chat/group-chat/group-chat-post.json',
+            ismock: false,
+            method: 'post',
+            desc: '创建沟通小组'
+        },
+        'chat.group-chat.delete': {
+            real: '/v2/chat/group-chat',
+            mock: '/mock/yangyang/v2/chat/group-chat/group-chat-delete.json',
+            ismock: false,
+            method: 'delete',
+            desc: '删除沟通小组'
+        },
+        'chat.chatPanel.unReadMessageNum': {
+            real: '/v2/chat/chatPanel/unReadMessageNum',
+            mock: '/mock/yangyang/v2/chat/chatPanel/unReadMessageNum.json',
+            ismock: true,
+            method: 'get',
+            desc: '单聊和小组的未读消息'
+        },
+        'project.projectInfo.displayName': {
+            real: '/v2/project/projectInfo/displayName',
+            mock: '/mock/yangyang/v2/project/projectInfo/displayName.json',
+            ismock: true,
+            method: 'get',
+            desc: '根据displayName获得相应项目'
+        },
+        'chat.chatPanel.search-project': {
+            real: '/v2/chat/chatPanel/search-project',
+            mock: '/mock/yangyang/v2/chat/chatPanel/search-project.json',
+            ismock: true,
+            method: 'get',
+            desc: '搜索项目成员'
+        },
+        'chat.chatPanel.search-group-chat': {
+            real: '/v2/chat/chatPanel/search-group-chat',
+            mock: '/mock/yangyang/v2/chat/chatPanel/search-group-chat.json',
+            ismock: true,
+            method: 'get',
+            desc: '搜索小组成员'
+        },
+        'user.friend.history-web': {
+            real: '/v2/user/friend/history-web',
+            mock: '/mock/yangyang/v2/user/friend/history-web.json',
+            ismock: true,
+            method: 'get',
+            desc: '查询新的好友'
+        },
+        'user.friend.confirm': {
+            real: '/v2/user/friend/confirm',
+            mock: '/mock/yangyang/v2/user/friend/confirm.json',
+            ismock: true,
+            method: 'put',
+            desc: '确认添加好友'
+        },
+        'user.friend.read': {
+            real: '/v2/user/friend/read',
+            mock: '/mock/yangyang/v2/user/friend/read.json',
+            ismock: true,
+            method: 'put',
+            desc: '新的好友的未读变成已读'
+        },
+        //  该接口不用了，没有与‘新的好友合并’
+        // 'chat.chatPanel.recent.get': {
+        //     real: '/v2/chat/chatPanel/recent',
+        //     mock: '/mock/yangyang/v2/chat/chatPanel/recent-get.json',
+        //     ismock: true,
+        //     method: 'get',
+        //     desc: '沟通面板的最近'
+        // },
+        'chat.chatPanel.recent.get': {
+            real: '/v2/chat/chatPanel/recent-new',
+            mock: '/mock/yangyang/v2/chat/chatPanel/recent-get.json',
+            ismock: true,
+            method: 'get',
+            desc: '沟通面板的最近'
+        },
+        'chat.chatPanel.recent.delete': {
+            real: '/v2/chat/chatPanel/recent',
+            mock: '/mock/yangyang/v2/chat/chatPanel/recent-delete.json',
+            ismock: true,
+            method: 'delete',
+            desc: '删除沟通面板的最近'
+        },
+        'chat.chatPanel.customerservice': {
+            real: '/v2/chat/chatPanel/customerservice',
+            mock: '/mock/yangyang/v2/chat/chatPanel/customerservice.json',
+            ismock: true,
+            method: 'get',
+            desc: '获取在线客服列表'
+        },
+        'chat.singleChat.message.img': {
+            real: '/v2/chat/singleChat/message/img',
+            mock: '/mock/yangyang/v2/chat/singleChat/message/img.json',
+            ismock: true,
+            method: 'get',
+            desc: '消息记录-单聊图片'
+        },
+        'chat.group-chat.message.img': {
+            real: '/v2/chat/group-chat/message/img',
+            mock: '/mock/yangyang/v2/chat/group-chat/message/img.json',
+            ismock: true,
+            method: 'get',
+            desc: '消息记录-群聊图片'
+        },
+        'chat.singleChat.message.file': {
+            real: '/v2/chat/singleChat/message/file',
+            mock: '/mock/yangyang/v2/chat/singleChat/message/file.json',
+            ismock: true,
+            method: 'get',
+            desc: '消息记录-单聊文件'
+        },
+        'chat.group-chat.message.file': {
+            real: '/v2/chat/group-chat/message/file',
+            mock: '/mock/yangyang/v2/chat/group-chat/message/file.json',
+            ismock: true,
+            method: 'get',
+            desc: '消息记录-群聊文件'
+        },
+        'chat.group-chat.message.at': {
+            real: '/v2/chat/group-chat/message/at',
+            mock: '/mock/yangyang/v2/chat/group-chat/message/at.json',
+            ismock: true,
+            method: 'get',
+            desc: '消息记录-群聊@'
+        },
+        'chat.singleChat.message.task': {
+            real: '/v2/chat/singleChat/message/task',
+            mock: '/mock/yangyang/v2/chat/singleChat/message/task.json',
+            ismock: true,
+            method: 'get',
+            desc: '消息记录-单聊任务'
+        },
+        'chat.group-chat.message.task': {
+            real: '/v2/chat/group-chat/message/task',
+            mock: '/mock/yangyang/v2/chat/group-chat/message/task.json',
+            ismock: true,
+            method: 'get',
+            desc: '消息记录-群聊任务'
+        },
+        'chat.singleChat.message.locate': {
+            real: '/v2/chat/singleChat/message/locate/{messageId}',
+            mock: '',
+            ismock: true,
+            method: 'get',
+            desc: '消息记录-单聊定位'
+        },
+        //资源，tag
+        'docker.tag': {
+            real: '/v2/docker/tag/{tagId}',
+            mock: '/mock/yangyang/v2/docker/tag.json',
+            ismock: true,
+            method: 'get',
+            desc: '资源里的tag'
+        },
+        //用户签到
+        'user.signIn': {
+            real: '/v2/user/signIn',
+            mock: '/mock/yangyang/v2/user/signIn.json',
+            ismock: true,
+            method: 'post',
+            desc: '用户签到'
+        },
+        'user.signType': {
+            real: '/v2/user/signType',
+            mock: '/mock/yangyang/v2/user/signType.json',
+            ismock: true,
+            method: 'get',
+            desc: '用户上一次签到'
+        },
+        'user.count': {
+            real: '/v2/user/count',
+            mock: '/mock/yangyang/v2/user/count.json',
+            ismock: true,
+            method: 'get',
+            desc: '签到统计'
+        },
+        //项目文件模块
+        'project.folders.post': {
+            real: '/v2/project/folders',
+            mock: '/mock/yangyang/v2/project/folders-post.json',
+            ismock: true,
+            method: 'post',
+            desc: '新建项目文件夹'
+        },
+        'project.folders.list.get': {
+            real: '/v2/project/folders/list',
+            mock: '/mock/yangyang/v2/dynamic/projectAttachment-get.json',
+            ismock: true,
+            method: 'get',
+            desc: '获取项目文件(夹)'
+        },
+        'project.folders.delete': {
+            real: '/v2/project/folders',
+            mock: '/mock/yangyang/v2/project/folders-delete.json',
+            ismock: true,
+            method: 'delete',
+            desc: '删除项目文件夹'
+        },
+        'project.folders.position.put': {
+            real: '/v2/project/folders/position',
+            mock: '/mock/yangyang/v2/project/folders/position-put.json',
+            ismock: true,
+            method: 'put',
+            desc: '移动项目文件夹'
+        },
+        'project.folders.get': {
+            real: '/v2/project/folders',
+            mock: '/mock/yangyang/v2/project/folders-get.json',
+            ismock: true,
+            method: 'get',
+            desc: '获取所有项目文件夹'
+        },
+
+
+
+
+        //------------------------ shenqingling end --------------------
+
+        //------------------------ sunlijun start --------------------
+
+
+
+        //------------------------ sunlijun end --------------------
+
+        //------------------------ xiweicheng start --------------------
+
+        'project.projectPageInit': {
+            real: '/v2/project/projectPageInit',
+            mock: '/mock/yangyang/v2/project/projectPageInit-post.json',
+            ismock: false,
+            method: 'post',
+            desc: '创建项目时，获得项目信息文本框'
+        },
+        'project.post': {
+            real: '/v2/project/',
+            mock: '/mock/yangyang/v2/project/project-post.json',
+            ismock: false,
+            method: 'post',
+            desc: '创建项目，获取项目的基本信息'
+        },
+        'project.get': { // 修改项目查询项目相关信息
+            real: '/v2/project/{projectid}',
+            mock: '/mock/yangyang/v2/project/project-get.json',
+            ismock: false,
+            method: 'get',
+            desc: '通过项目ID，查看项目详细信息（修改项目初始化界面）'
+        },
+        'project.put': { // 修改项目
+            real: '/v2/project/{projectid}',
+            mock: '/mock/yangyang/v2/project/project-put.json',
+            ismock: false,
+            method: 'put',
+            desc: '点击项目修改按钮时，修改项目的信息',
+            payload: {
+                projectId: 'ff8081814fe5a2bb014fe8c0618d0678',
+                projectName: '测试项目', // 可选参数
+                projectNameShort: '测试项目', // 可选参数
+                projectDesc: '项目描述', // 可选参数
+                importanceLevel: '41001', // 可选参数
+                addTagName: 'asfsd', // 可选参数
+                deleteTagIds: 'ff8081814ff48417014ffd2a66cc2d72' // 可选参数
+            }
+        },
+        'project.delete': { // 删除项目
+            real: '/v2/project/{projectid}',
+            mock: '/mock/yangyang/v2/project/project-delete.json',
+            ismock: false,
+            method: 'delete',
+            desc: '通过项目ID，删除项目',
+            payload: {
+                projectId: 'ff8081814ea9846c014eaae0e09d1423',
+            }
+        },
+        'project.projectMember.get': { // 查询项目成员列表
+            real: '/v2/project/{projectId}/projectMember',
+            mock: '/mock/yangyang/v2/project/projectMember-get.json',
+            ismock: false,
+            method: 'get',
+            desc: '初始化项目成员列表',
+            payload: {
+                projectId: 'ff8081814fe5a2bb014fe8c0618d0678',
+            }
+        },
+        'project.projectMember.post': { // 邀请项目参与人
+            real: '/v2/project/{projectId}/projectMember',
+            mock: '/mock/yangyang/v2/project/projectMember-post.json',
+            ismock: false,
+            method: 'post',
+            desc: '项目邀请项目成员',
+            payload: {
+                projectId: 'ff8081814ea9846c014eaae0e09d1423',
+                inMemberRoleStr: '{"inMemberRole":[{"userEmail":"sdfasdf@sdfs.com","roleId":"cf47cd069fac11e48fc84437e6e6f951"}]}',
+                mailAddress: 'sdfasdf@sdfs.com'
+            }
+        },
+        'project.mail': { // 重新发送邀请邮件
+            real: '/v2/project/{projectId}/mail',
+            mock: '/mock/yangyang/v2/project/mail-put.json',
+            ismock: false,
+            method: 'put',
+            desc: '重新发送邀请邮件',
+            payload: {
+                projectId: 'ff8081814ea9846c014eaae0e09d1423',
+                inMemberRoleStr: '{"inMemberRole":[{"userEmail":"sdfasdf@sdfs.com","roleId":"cf47cd069fac11e48fc84437e6e6f951"}]}',
+                mailAddress: 'sdfasdf@sdfs.com'
+            }
+        },
+        'project.projectManager': { // 更换项目负责人
+            real: '/v2/project/{projectId}/projectManager',
+            mock: '/mock/yangyang/v2/project/projectManager-put.json',
+            ismock: false,
+            method: 'put',
+            desc: '更换项目负责人',
+            payload: {
+                projectId: 'ff8081814ea9846c014eaae0e09d1423',
+                inMemberRoleStr: '{"inMemberRole":[{"userEmail":"sdfasdf@sdfs.com","roleId":"cf47cd069fac11e48fc84437e6e6f951"}]}',
+                mailAddress: 'sdfasdf@sdfs.com'
+            }
+        },
+        'project.participation': { // 项目邀请成员消息同意操作
+            real: ' /v2/project/participation',
+            mock: '/mock/yangyang/v2/project/participation-post.json',
+            ismock: false,
+            method: 'post',
+            desc: '项目邀请成员消息同意操作'
+        },
+        'project.projectMember.delete': { // 删除项目成员
+            real: '/v2/project/{projectId}/projectMember',
+            mock: '/mock/yangyang/v2/project/projectMember-delete.json',
+            ismock: false,
+            method: 'delete',
+            desc: '通过项目ID、成员登录名，删除该项目成员',
+            payload: {
+                projectId: 'ff8081814ea9846c014eaae0e09d1423',
+                memberLoginName: 'fdgds@dfgas.com'
+            }
+        },
+        'project.closeProject.put': { // 归档项目
+            real: '/v2/project/closedProject/{projectId}',
+            mock: '/mock/yangyang/v2/project/closeProject-put.json',
+            ismock: false,
+            method: 'put',
+            desc: '通过项目ID，关闭项目',
+            payload: {
+                projectId: 'ff8081814ea9846c014eaae0e09d1423'
+            }
+        },
+        'project.openProject.put': { // 解除项目归档
+            real: '/v2/project/openedProject/{projectId}',
+            mock: '/mock/yangyang/v2/project/openProject-put.json',
+            ismock: false,
+            method: 'put',
+            desc: '通过项目ID，重新开启项目',
+            payload: {
+                projectId: 'ff8081814ea9846c014eaae0e09d1423'
+            }
+        },
+        'authentication.user.notOnline.post': {
+            real: '/v1/login/logout',
+            mock: '/mock/yangyang/v2/authentication/user/notOnline-post.json',
+            ismock: false,
+            method: 'post',
+            desc: '用户退出',
+            payload: {
+                loginName: '',
+                accessToken: ''
+            }
+        },
+        'project.projectInfo.namespace.get': {
+            real: '/v2/project/projectInfo/namespace/{projectNameSpace}',
+            mock: '/mock/yangyang/v2/project/projectInfo/namespace-get.json',
+            ismock: false,
+            method: 'get',
+            desc: '通过项目的域名，获得项目信息',
+            payload: {
+                projectNameSpace: ''
+            }
+        },
+        'project.namespace.get': {
+            real: 'v2/project/namespace',
+            mock: '/mock/yangyang/v2/project/namespace-get.json',
+            ismock: false,
+            method: 'get',
+            desc: '通过项目的域名，获得项目ID',
+            payload: {
+                namespace: ''
+            }
+        },
+
+
+        //------------------------ xiweicheng end --------------------
+
+        //------------------------ xufan start --------------------
+        //根据taskId查询任务详情接口(任务接口)
+        'task.get': {
+            real: '/v2/task/{taskId}',
+            mock: '/mock/yangyang/v2/task-get.json',
+            ismock: false,
+            method: 'get'
+        },
+        //读取git(任务接口)
+        'task.taskTagDetail.tag3': {
+            real: '/v2/task/taskTagDetail/{taskId}',
+            mock: '/mock/yangyang/v2/task/taskTagDetailTag3.json',
+            ismock: false,
+            method: 'get'
+        },
+        //读取动态(任务接口)
+        'task.taskTagDetail.tag4': {
+            real: '/v2/task/taskTagDetail/{taskId}',
+            mock: '/mock/yangyang/v2/task/taskTagDetailTag4.json',
+            ismock: false,
+            method: 'get'
+        },
+        //修改任务(任务接口)
+        'task.task.put': {
+            real: '/v2/task/task/{taskId}',
+            mock: '/mock/yangyang/v2/task/task-put.json',
+            ismock: false,
+            method: 'put'
+        },
+        //删除任务参与者(任务接口)
+        'task.taskJoinMember.detele': {
+            real: '/v2/task/taskJoinMember/{taskId}',
+            mock: '/mock/yangyang/v2/task/taskJoinMember-delete.json',
+            ismock: false,
+            method: 'detele'
+        },
+        //查询我的动态(动态接口)
+        'dynamic.allMyDynamic': {
+            real: '/v2/dynamic/allMyDynamic',
+            mock: '/mock/yangyang/v2/dynamic/allMyDynamic.json',
+            ismock: true,
+            method: 'get'
+        },
+        'dynamic.myUnReadDynamicCount': {
+            real: '/v2/dynamic/myUnReadDynamicCount',
+            mock: '/mock/yangyang/v2/dynamic/myUnReadDynamicCount.json',
+            ismock: false,
+            method: 'get'
+        },
+        //查询项目动态(动态接口)
+        'dynamic.allDynamic': {
+            real: '/v2/dynamic/allDynamic',
+            mock: '/mock/yangyang/v2/dynamic/allDynamic.json',
+            ismock: true,
+            method: 'get'
+        },
+        //项目动态任务数量接口
+        'dynamic.getProjectTaskCount': {
+            real: '/dynamic/getProjectTaskCount',
+            mock: '/mock/yangyang/v2/dynamic/getProjectTaskCount.json',
+            ismock: true,
+            method: 'get'
+        },
+        'chat.group-chat.member.delete': {
+            real: '/v2/chat/group-chat/member',
+            mock: '/mock/yangyang/v2/chat/group-chat/member-delete.json',
+            ismock: true,
+            method: 'delete'
+        },
+        'chat.group-chat.member.post': {
+            real: '/v2/chat/group-chat/member',
+            mock: '/mock/yangyang/v2/chat/group-chat/member-post.json',
+            ismock: true,
+            method: 'post'
+        },
+        //根据项目id 查询项目内的附件
+        'project.attachment.get': {
+            real: '/v2/project/{projectId}/attachment',
+            mock: '/mock/yangyang/v2/dynamic/projectAttachment-get.json',
+            ismock: true,
+            method: 'get'
+        },
+        //上传项目附件
+        'project.attachment.post': {
+            real: '/v2/project/{projectId}/attachment',
+            mock: '/mock/yangyang/v2/dynamic/projectAttachment-post.json',
+            ismock: true,
+            method: 'post'
+        },
+        //删除项目附件
+        'project.attachment.delete': {
+            real: '/v2/project/{projectId}/attachment',
+            mock: '/mock/yangyang/v2/dynamic/projectAttachment-delete.json',
+            ismock: true,
+            method: 'delete'
+        },
+        //项目成员在线和签到情况
+        'user.signMessage': {
+            real: ' /v2/user/signMessage',
+            mock: '/mock/yangyang/v2/dynamic/userSignMessage.json',
+            ismock: true,
+            method: 'get'
+        },
+        //主页上查找项目下人的日程信息
+        'schedule.home.schedule-list': {
+            real: ' /v2/schedule/home/schedule-list-new',
+            mock: '/mock/yangyang/v2/dynamic/scheduleHomeScheduleList.json',
+            ismock: true,
+            method: 'get'
+        },
+        'project.projectNameSpace.get': {
+            real: 'v2/project/projectNameSpace',
+            mock: '/mock/yangyang/v2/project/namespace-get.json',
+            ismock: false,
+            method: 'get',
+            desc: '通过项目的域名，获得项目ID',
+            payload: {
+                namespace: ''
+            }
+        },
+        //------------------------ xufan end --------------------
+
+        //------------------------ zhangjianyu start --------------------
+
+
+        'user.userInfo.get': {
+            real: '/v2/user/userInfo',
+            mock: '/mock/yangyang/v2/user/userInfo-get.json',
+            ismock: false,
+            method: 'get'
+        },
+        'user.getHabby.get': {
+            real: '/v2/user/habby',
+            mock: '/mock/yangyang/v2/user/getHabby-get.json',
+            ismock: false,
+            method: 'get'
+        },
+        'v2.user.updateUserInfo.put': {
+            real: '/v2/user/userInfo',
+            mock: '/mock/yangyang/v2/user/updateUserInfo-put.json',
+            ismock: false,
+            method: 'put'
+        },
+        'v2.user.updateUserInfotag.put': {
+            real: '/v2/user/userInfo',
+            mock: '/mock/yangyang/v2/user/updateUserInfotag-put.json',
+            ismock: false,
+            method: 'put'
+        },
+        'v2.user.updateUserInfo.delete': {
+            real: '/v2/user/userInfo',
+            mock: '/mock/yangyang/v2/user/updateUserInfo-delete.json',
+            ismock: false,
+            method: 'put'
+        },
+        'v2.user.updateUserPWD.put': {
+            real: '/v2/user/password',
+            mock: '/mock/yangyang/v2/user/updateUserPWD-put.json',
+            ismock: false,
+            method: 'put'
+        },
+        'v2.user.updateHabby.put': {
+            real: '/v2/user/habby',
+            mock: '/mock/yangyang/v2/user/updateHabby-put.json',
+            ismock: false,
+            method: 'put'
+        },
+        'v2.user.dimension.post': {
+            real: '/v2/authentication/mobile/dimension/picture',
+            mock: '/mock/yangyang/v2/user/dimension-post.json',
+            ismock: false,
+            method: 'post'
+        },
+        'v2.user.onlineHabby.put': {
+            real: '/v2/user/onlineHabby',
+            mock: '/mock/yangyang/v2/user/onlineHabby.json',
+            ismock: false,
+            method: 'put'
+        },
+        'v2.authentication.name.get': {
+            real: '/v2/authentication/name',
+            mock: '/mock/yangyang/v2/user/usermobilecheck.json',
+            ismock: false,
+            method: 'get'
+        },
+        'chat.at.put': {
+            real: '/v2/chat/at/{messageId}',
+            mock: '',
+            ismock: false,
+            method: 'put'
+        },
+        'chat.groupChat.message.locate.get': {
+            real: '/v2/chat/group-chat/message/locate/{messageId}',
+            mock: '',
+            ismock: false,
+            method: 'get'
+        }
+
+        //------------------------ zhangjianyu end --------------------
+
+    
